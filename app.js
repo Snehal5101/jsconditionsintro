@@ -30,10 +30,10 @@ for (let i=1; i<=100; i++){
 }
 
 function time(){
-    if (document.getElementById("inputtime").innerHTML <= 12){
+    if (document.getElementById("inputtime").value <= "12"){
         document.getElementById("timeevent").innerHTML="Its Morning Time"; 
     }
-    else if (document.getElementById("inputtime").innerHTML <= 16){
+    else if (document.getElementById("inputtime").value<= "16"){
         document.getElementById("timeevent").innerHTML="Its Afternoon Time"; 
     }
     else{
@@ -51,5 +51,26 @@ function mark(){
     }
     else{
         document.getElementById("marksheet").innerHTML="Good performance"; 
+    }
+}
+
+
+function select(){
+    if (document.getElementById("age").value<="40"){
+        if (document.getElementById("age").value<="20"){
+            document.getElementById("nested").innerHTML="You are a Child or Teenager";
+        }
+        else{
+            document.getElementById("nested").innerHTML="You are Younger now";
+
+        }
+    }
+    else{
+        if (document.getElementById("age").value<="60"){
+            document.getElementById("nested").innerHTML="You are at your Middleage";
+        }
+        else{
+            document.getElementById("nested").innerHTML="You are Aged";
+        }
     }
 }
