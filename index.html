@@ -11,7 +11,7 @@
 
 </head>
 <body class="container m-3 p-3">
-    <section id="for"class="container text-center  m-3 p-3" style="background-color: rgb(250, 231, 208);"> 
+    <!-- <section id="for"class="container text-center  m-3 p-3" style="background-color: rgb(250, 231, 208);"> 
         <div>
             <p  id="firsttask"></p>       
         </div>
@@ -22,7 +22,7 @@
     </section>
 
     <section class="container m-4 p-3 bg-dark text-light text-center"> 
-        <!-- <h1 id=time></h1> -->
+        <h1 id=time></h1>
         <div>
             <h2>Do you like Tea?</h2> 
      <input type="text" id="text" placeholder="yes/no" value="" />
@@ -55,7 +55,31 @@
 
         </div>
 
+    </section> --> 
+
+    <section class="container m-4 p-3 bg-secondary text-light text-center">
+        <div>
+            <input type="number" id="timedemo" placeholder="enter time 1to24 hours" value="" />
+           <button onclick="timedemo()">submit</button>
+        </div>
+        <br/>
+        <div>
+            <h3 id="outdemo"></h3>
+        </div>
+
     </section>
+
+    <section class="container m-4 p-3 bg-secondary text-light text-center">
+        <div id="whiledemo">
+
+        </div>
+
+        <div id="dodemo">
+            
+        </div>
+    </section>
+  
+     
 
    <script src="./app.js"></script> 
 </body>
